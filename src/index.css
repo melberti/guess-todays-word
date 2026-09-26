@@ -54,6 +54,7 @@ form {
 @media screen and (min-width: 768px) {
   footer {
     font-size: 14px;
+    width: 400px;
   }
 
   .intro {
@@ -67,7 +68,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   font-size: 13px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  width: 300px;
 }
 
 button {
@@ -76,6 +78,7 @@ button {
   padding: 5px;
   color: white;
   font-weight: bold;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -84,12 +87,13 @@ input {
   padding: 5px;
   outline: silver;
   text-transform: uppercase;
+  font-size: 16px;
 }
 
 .intro {
   text-align: left;
   width: 300px;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: auto;
   margin-right: auto;
 }

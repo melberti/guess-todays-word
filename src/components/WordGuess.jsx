@@ -92,7 +92,7 @@ function WordGuess({ secretWord, gameOver, setGameOver, setWon }) {
               onClick={handleClick}
               disabled={disabled}
             >
-              Submit Guess
+              Submit
             </button>
           </form>
         </>

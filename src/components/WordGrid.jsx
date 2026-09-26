@@ -32,19 +32,17 @@ function compareArrays(userLetters, secretLetters) {
     return colors;
   }
 
-  outerloop: for (var si = 0; si < secretLetters.length; si++) {
-    //
-    //innerloop
+  for (var si = 0; si < secretLetters.length; si++) {
     for (var ui = 0; ui < userLetters.length; ui++) {
       if (secretLetters[si] === userLetters[si]) {
         colors[si] = 'green';
-        continue outerloop;
-      }
-      //
-      //
-      else if (secretLetters[si] === userLetters[ui]) {
+        break;
+      } else if (
+        secretLetters[si] === userLetters[ui] &&
+        colors[ui] === 'gray' //if already green, don't set to yellow!
+      ) {
         colors[ui] = 'yellow';
-        continue outerloop;
+        break;
       }
     }
   }
